@@ -1,3 +1,5 @@
+require 'pry'
+
 class Book 
   def initialize(title)
     @title = title 
@@ -36,3 +38,7 @@ class Book
   end 
 end 
 
+book = Book.new("Some Title")
+book.turn_page
+
+binding.pry
